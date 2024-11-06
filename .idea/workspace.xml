@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d26b6116-0d9c-467d-bc46-8bda605c469a" name="Changes" comment="am adaugat pagina about si am modificat template ul in index">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="d26b6116-0d9c-467d-bc46-8bda605c469a" name="Changes" comment="Partea 3 : am adaugat menu.jsp si footer.jsp">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/Cars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/about.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/menu.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Servlet" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -75,6 +74,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -85,6 +85,7 @@
   </component>
   <component name="RunManager">
     <configuration name="GlassFish 7.0.9" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.9" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="Gradle : com.parking : ParkingLot2-1.0-SNAPSHOT.war">
           <settings />
@@ -102,6 +103,21 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="9009" />
       </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -157,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1730269605044</updated>
       <workItem from="1730269606126" duration="2717000" />
-      <workItem from="1730873317775" duration="2193000" />
+      <workItem from="1730873317775" duration="4647000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -175,7 +191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730272159655</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="am adaugat menu.jsp si footer.jsp">
+      <option name="closed" value="true" />
+      <created>1730875633188</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730875633188</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Partea 3 : am adaugat menu.jsp si footer.jsp">
+      <option name="closed" value="true" />
+      <created>1730875698388</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730875698388</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +216,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="am adaugat pagina about si am modificat template ul in index" />
-    <option name="LAST_COMMIT_MESSAGE" value="am adaugat pagina about si am modificat template ul in index" />
+    <MESSAGE value="am adaugat menu.jsp si footer.jsp" />
+    <MESSAGE value="Partea 3 : am adaugat menu.jsp si footer.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Partea 3 : am adaugat menu.jsp si footer.jsp" />
   </component>
 </project>
