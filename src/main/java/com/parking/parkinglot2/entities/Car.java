@@ -1,17 +1,29 @@
 package com.parking.parkinglot2.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
-@Table(name = "car")
+@Table(name = "cars")
 public class Car {
-    @ManyToOne
-    @JoinColumn(name = "owner_id")
+    private Long id;
+
     private User owner;
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    @Id
+    @GeneratedValue
+    public Long getId() {
+        return id;
+    }
+
+    private String licensePlate;
+
+    private String parkingSpot;
+
+    @ManyToOne
     public User getOwner() {
         return owner;
     }
@@ -19,4 +31,21 @@ public class Car {
     public void setOwner(User owner) {
         this.owner = owner;
     }
+
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
+    }
+
+    public String getParkingSpot() {
+        return parkingSpot;
+    }
+
+    public void setParkingSpot(String parkingSpot) {
+        this.parkingSpot = parkingSpot;
+    }
+
 }
