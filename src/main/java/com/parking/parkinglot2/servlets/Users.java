@@ -1,6 +1,5 @@
-package com.parking.parkinglot2;
+package com.parking.parkinglot2.servlets;
 
-import com.parking.parkinglot2.common.CarDTO;
 import com.parking.parkinglot2.common.UserDto;
 import com.parking.parkinglot2.ejb.UserBean;
 import jakarta.inject.Inject;
