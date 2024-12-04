@@ -4,7 +4,7 @@
 
 <t:pageTemplate pageTitle="Cars">
   <h1>Cars</h1>
-    <from method="POST" action="${pageContext.request.contextPath}/Cars">
+    <form method="POST" action="${pageContext.request.contextPath}/Cars">
     <a href="${pageContext.request.contextPath}/AddCar" class="btn btn-primary btn-lg">Add Car</a>
     <button class="btn btn-danger" type="submit">Delete Cars</button>
     <div class="container text-center">
@@ -31,6 +31,6 @@
       </div>
    </c:forEach>
   </div>
-    </from>
+    </form>
   <h5>Free parking spots: ${numberOfFreeParkingSpots}</h5>
 </t:pageTemplate>

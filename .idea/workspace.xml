@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d26b6116-0d9c-467d-bc46-8bda605c469a" name="Changes" comment="Partea 7 : created the ejb and works">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/servlets/AddCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/servlets/EditCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addCar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editCar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/form-validation.js" afterDir="false" />
+    <list default="true" id="d26b6116-0d9c-467d-bc46-8bda605c469a" name="Changes" comment="Partea 8 : am adaugat edit si buton de delete, dar momentan nu merge delete ul">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/Cars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/servlets/Cars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/servlets/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/servlets/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/common/CarDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/common/CarDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/common/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/common/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/ejb/CarsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/ejb/CarsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/ejb/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parking/parkinglot2/ejb/UserBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/cars.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pageTemplate.tag" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,25 +109,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "GlassFish Server.GlassFish 7.0.9.executor": "Run",
-    "Gradle.Build ParkingLot2.executor": "Run",
-    "Gradle.ParkingLot2 [clean].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/alextoader20/Documents/GitHub/software-engineering-project-team-31/BookingApp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;GlassFish Server.GlassFish 7.0.9.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build ParkingLot2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ParkingLot2 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alextoader20/Documents/GitHub/software-engineering-project-team-31/BookingApp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\alextoader20\IdeaProjects\ingineriesoft\ParkingLot2\src\main\webapp\WEB-INF\pages" />
@@ -274,7 +260,8 @@
       <workItem from="1732641796453" duration="40000" />
       <workItem from="1732641932877" duration="1495000" />
       <workItem from="1732687612831" duration="4907000" />
-      <workItem from="1733232353781" duration="6601000" />
+      <workItem from="1733232353781" duration="6886000" />
+      <workItem from="1733292135970" duration="1190000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -356,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732643422122</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Partea 8 : am adaugat edit si buton de delete, dar momentan nu merge delete ul">
+      <option name="closed" value="true" />
+      <created>1733239237551</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733239237551</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +376,7 @@
     <MESSAGE value="Partea 6 : am link-uit proiectul la mysql" />
     <MESSAGE value="Partea 7 : created the ejb" />
     <MESSAGE value="Partea 7 : created the ejb and works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Partea 7 : created the ejb and works" />
+    <MESSAGE value="Partea 8 : am adaugat edit si buton de delete, dar momentan nu merge delete ul" />
+    <option name="LAST_COMMIT_MESSAGE" value="Partea 8 : am adaugat edit si buton de delete, dar momentan nu merge delete ul" />
   </component>
 </project>
