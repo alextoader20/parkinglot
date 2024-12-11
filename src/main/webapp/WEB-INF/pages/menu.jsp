@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -25,7 +26,14 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/Login">Login</a>
+                        <c:choose>
+                            <c:when test="${pageContext.request.getRemoteUser() == null}">
+                                <a class="nav-link" href="${pageContext.request.contextPath}/Login">Login</a>
+                            </c:when>
+                            <c:otherwise>
+                                <a class="nav-link" href="${pageContext.request.contextPath}/Logout">Logout</a>
+                            </c:otherwise>
+                        </c:choose>
                     </li>
 
                 </ul>
