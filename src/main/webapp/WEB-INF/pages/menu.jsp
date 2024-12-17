@@ -1,4 +1,6 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -15,10 +17,14 @@
                            aria-current="page" href="${pageContext.request.contextPath}/about.jsp">About</a>
                     </li>
                     <li class="nav-item">
+                        <c:if test="${pageContext.request.isUserInRole('READ_CARS')}">
                         <a class="nav-link active" ${activePage eq '/Cars' ? ' active' : ''} href="${pageContext.request.contextPath}/Cars">Cars</a>
+                        </c:if>
                     </li>
                     <li class="nav-item">
+                        <c:if test="${pageContext.request.isUserInRole('READ_USERS')}">
                         <a class="nav-link active" ${activePage eq '/Users' ? ' active' : ''} href="${pageContext.request.contextPath}/Users">Users</a>
+                        </c:if>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled">Disabled</a>
