@@ -1,24 +1,22 @@
-package com.parking.parkinglot2.entities;
+package com.parking.parkinglot2.common;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToOne;
+public class CarPhotoDto {
 
-@Entity
-public class CarPhoto {
     private Long id;
 
-    String filename;
+    private String filename;
 
-    String fileType;
+    private String fileType;
 
-    byte[] fileContent;
+    private byte[] fileContent;
 
-    Car car;
+    public CarPhotoDto(long id, String filename, String fileType, byte[] fileContent) {
+        this.id = id;
+        this.filename = filename;
+        this.fileType = fileType;
+        this.fileContent = fileContent;
+    }
 
-    @Id
-    @GeneratedValue
     public Long getId() {
         return id;
     }
@@ -50,15 +48,4 @@ public class CarPhoto {
     public void setFileContent(byte[] fileContent) {
         this.fileContent = fileContent;
     }
-
-    @OneToOne
-    public Car getCar() {
-        return car;
-    }
-
-    public void setCar(Car car) {
-        this.car = car;
-    }
-
-
 }
