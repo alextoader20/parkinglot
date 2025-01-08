@@ -1,4 +1,4 @@
-package com.parking.parkinglot2.servlets;
+package com.parking.parkinglot2.servlets.cars;
 
 import com.parking.parkinglot2.common.UserDto;
 import com.parking.parkinglot2.ejb.CarsBean;

@@ -1,4 +1,4 @@
-package com.parking.parkinglot2.servlets;
+package com.parking.parkinglot2.servlets.users;
 
 import com.parking.parkinglot2.ejb.PasswordBean;
 import com.parking.parkinglot2.ejb.UserBean;
@@ -19,7 +19,7 @@ public class AddUser extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse
             response) throws ServletException, IOException {
         request.setAttribute("userGroups", new String[] {"READ_CARS", "WRITE_CARS",
-                "READ_USERS", "WRITE_USERS"});
+                "READ_USERS", "WRITE_USERS","INVOICING"});
         request.getRequestDispatcher("/WEB-INF/pages/addUser.jsp").forward(request,
                 response);
     }

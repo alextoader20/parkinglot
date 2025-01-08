@@ -1,41 +1,50 @@
-package com.parking.parkinglot2.servlets;
+package com.parking.parkinglot2.servlets.cars;
 
 import com.parking.parkinglot2.common.CarDto;
+import com.parking.parkinglot2.common.UserDto;
 import com.parking.parkinglot2.ejb.CarsBean;
+import com.parking.parkinglot2.ejb.UserBean;
 import jakarta.inject.Inject;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
-@MultipartConfig
-@WebServlet(name = "AddCarPhoto", value = "/AddCarPhoto")
-public class AddCarPhoto extends HttpServlet {
+import java.util.List;
+
+@ServletSecurity(value = @HttpConstraint(rolesAllowed =
+        {"WRITE_CARS"}))
+
+@WebServlet(name = "EditCar", value = "/EditCar")
+public class EditCar extends HttpServlet {
+    @Inject
+    UserBean userBean;
+
     @Inject
     CarsBean carsBean;
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse
             response) throws ServletException, IOException {
+        List<UserDto> users = userBean.findAllUsers();
+        request.setAttribute("users", users);
+
         Long carId = Long.parseLong(request.getParameter("id"));
         CarDto car = carsBean.findById(carId);
         request.setAttribute("car", car);
 
-        request.getRequestDispatcher("/WEB-INF/pages/addCarPhoto.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/pages/editCar.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse
             response) throws ServletException, IOException {
+        String licensePlate = request.getParameter("license_plate");
+        String parkingSpot = request.getParameter("parking_spot");
+        Long userId = Long.parseLong(request.getParameter("owner_id"));
         Long carId = Long.parseLong(request.getParameter("car_id"));
-        Part filePart = request.getPart("file");
-        String fileName = filePart.getSubmittedFileName();
-        String fileType = filePart.getContentType();
-        long fileSize = filePart.getSize();
-        byte[] fileContent = new byte[(int) fileSize];
-        filePart.getInputStream().read(fileContent);
 
-        carsBean.addPhotoToCar(carId,fileName,fileType,fileContent);
+        carsBean.updateCar(carId, licensePlate, parkingSpot, userId);
         response.sendRedirect(request.getContextPath() + "/Cars");
     }
 }
-

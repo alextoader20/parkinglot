@@ -1,4 +1,4 @@
-package com.parking.parkinglot2.servlets;
+package com.parking.parkinglot2.servlets.cars;
 
 import com.parking.parkinglot2.common.CarDto;
 import com.parking.parkinglot2.ejb.CarsBean;
@@ -26,7 +26,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse
 response) throws ServletException, IOException{
     List<CarDto> cars=carsBean.findAllCars();
     request.setAttribute("cars", cars);
-    request.setAttribute("numberOfFreeParkingSpots", 10);
+    request.setAttribute("numberOfFreeParkingSpots", 10-cars.size());
  request.getRequestDispatcher("/WEB-INF/pages/cars.jsp").forward(request,response);
 }
     @Override

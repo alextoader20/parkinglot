@@ -6,7 +6,9 @@
     <h1>Users</h1>
     <c:if test="${pageContext.request.isUserInRole('WRITE_USERS')}">
     <a href="${pageContext.request.contextPath}/AddUser" class="btn btn-primary btn-lg">Add User</a>
+    <c:if test="${pageContext.request.isUserInRole('INVOICING')}">
     <button class="btn btn-secondary" type="submit">Invoice</button>
+    </c:if>
     </c:if>
     <div class="container text-center">
         <c:forEach var="user" items="${users}">
