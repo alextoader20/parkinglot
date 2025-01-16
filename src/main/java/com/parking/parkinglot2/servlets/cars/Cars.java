@@ -27,7 +27,7 @@ response) throws ServletException, IOException{
     List<CarDto> cars=carsBean.findAllCars();
     request.setAttribute("cars", cars);
     request.setAttribute("numberOfFreeParkingSpots", 10-cars.size());
- request.getRequestDispatcher("/WEB-INF/pages/cars.jsp").forward(request,response);
+ request.getRequestDispatcher("/WEB-INF/cars/cars.jsp").forward(request,response);
 }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,6 +41,7 @@ response) throws ServletException, IOException{
         }
         response.sendRedirect(request.getContextPath() + "/Cars");
     }
+
 
 
 }

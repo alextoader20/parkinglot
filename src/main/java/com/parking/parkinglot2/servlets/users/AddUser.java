@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 @ServletSecurity(value = @HttpConstraint(rolesAllowed = {"WRITE_USERS"}))
 
-@WebServlet(name = "AddUser", value = "/AddUser")
+@WebServlet(name = "AddUser", value = "/users/AddUser")
 
 public class AddUser extends HttpServlet {
     @Override
@@ -20,7 +20,7 @@ public class AddUser extends HttpServlet {
             response) throws ServletException, IOException {
         request.setAttribute("userGroups", new String[] {"READ_CARS", "WRITE_CARS",
                 "READ_USERS", "WRITE_USERS","INVOICING"});
-        request.getRequestDispatcher("/WEB-INF/pages/addUser.jsp").forward(request,
+        request.getRequestDispatcher("/WEB-INF/users/addUser.jsp").forward(request,
                 response);
     }
 
